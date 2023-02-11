@@ -1,4 +1,5 @@
 import {*} with "./faq.jac";
+import {*} with "./ai_model.jac";
 node dialogue_root;
 
 
@@ -126,7 +127,7 @@ graph tesla_ai {
 walker init {
     root {
         spawn here ++> graph::tesla_ai;
-        spawn here walker::talk;
+        
     }
 }
 
